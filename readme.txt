@@ -11,6 +11,21 @@
 
 ポップアップするサイズなど、詳細設定については jQueryFancybox.4preload.js をカスタマイズしてください。
 
+d3forumのコメント投稿欄をポップアップ対応にするには、Altsysのテンプレート管理にて、inc_post_form_quick.html を次のように修正してください。（marine add 部分を追加）
+
+
+<!-- comment input form -->
+<a class="fancybox" title="quick post" href="#d3f_post_form_quick">Comment</a><{* -- marine add *}>
+<div id="d3f_post_form_quick_div"><{* -- marine add *}>
+<div id="d3f_post_form_quick"><{* -- marine add *}>
+
+<h2 class="head"><{$h2_title|default:$smarty.const._MD_D3FORUM_POSTASCOMMENTTOP}></h2>
+
+・・・フォームの内容・・・
+
+</div><{* -- marine add *}>
+</div><{* -- marine add *}>
+
 
 ====================
 履歴
